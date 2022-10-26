@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+font-family: Arial;
+outline: none;
+cursor: pointer;
+font-size: 16px;
+list-style-type: none;
+}
+
+a:link { 
+color: black;
+text-decoration: none;}
+
+a:visited {
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover {
+color: #03a9f5;
+text-decoration: none;
+}
+
+a:active{
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+
+.accordion {
+  
+  color: #000000;
+  cursor: pointer;
+  padding: 15px;
+  margin-left:10px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-family: Arial;
+  transition: 0.4s;
+  background-color: white;
+}
+
+.active{
+color: black;
+font-weight: bold;
+}
+
+.accordion-nochild{
+ color: #000000;
+  cursor: pointer;
+  padding: 15px;
+  margin-left:22px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-family: Arial;
+  transition: 0.4s;
+  background-color: white;
+}
+
+.accordion-nochild:hover {
+color: #03a9f5;
+}
+.accordion:before{
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.active:before{
+  content: "\2212";
+}
+
+.panel {
+  padding: 0px 18px;
+  margin-left: 50px;
+  font-size: 16px;
+  font-family: Arial;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.bluehover:hover {
+color: #03a9f5;
+}
+
+.list-item:hover{
+color:  #03a9f5;
+}
+</style>
+</head>
+<body>
+
+<button class="bluehover accordion-nochild">
+<a href="https://blog.fgrade.com/getting-started">&nbsp;&nbsp; Getting Started</a></button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion"><a href="https://blog.fgrade.com/signup">&nbsp;&nbsp; Sign Up/Sign In </a></button>
+<div class="panel">
+  <p class="list-item"><a href="">User Profile Section</a></p>
+</div>
+
+<button class="bluehover accordion-nochild"><a href="https://blog.fgrade.com/custom-domain-email">&nbsp;&nbsp; Custom Domain Email Address</a></button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion"><a href="https://blog.fgrade.com/using-zoho-mail">&nbsp;&nbsp; Using Zoho mail
+</a></button>
+<div class="panel">
+<p class="list-item">GDPR Compliance</p>
+<p class="list-item">Zoho Mail Usage Policy</p>
+<p class="list-item">Supported Languages</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Offline Mode</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Progressive Web Application</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Reading emails</button>
+<div class="panel">
+<p class="list-item">Email Layout and Views</p>
+<p class="list-item">Mail Options</p>
+<p class="list-item">Manage Attachments</p>
+<p class="list-item">Security Information</p>
+<p class="list-item">Conversation View</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Quick Actions and Email Snippets</button>
+<div class="panel">
+<p class="list-item">Highlighting Email Snippets</p>
+<p class="list-item">Embedding Quick Actions</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Sending emails</button>
+<div class="panel">
+<p class="list-item">Huge Attachments</p>
+<p class="list-item">Insert Images</p>
+<p class="list-item">Schedule Emails</p>
+<p class="list-item">Track Email Delivery status</p>
+<p class="list-item">Using Templates</p>
+<p class="list-item">Attachment Options</p>
+<p class="list-item">S/MIME</p>
+<p class="list-item">SecurePass Email</p>
+<p class="list-item">Email Recall</p>
+<p class="list-item">Mail Merge Extension</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Searching Emails</button>
+<div class="panel">
+<p class="list-item">Old Search vs New Search</p>
+<p class="list-item">Search Syntax - Parameters and Operators</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; User Spam Settings</button>
+<div class="panel">
+<p class="list-item">Secure Attachment Policy - File </br>types blocked by Zoho Mail</p>
+<p class="list-item">Spam Control</p>
+<p class="list-item">Reasons an email is marked as spam</p>
+<p class="list-item">Guidelines and Best practices</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Groups</button>
+<div class="panel">
+<p class="list-item">Streams</p>
+<p class="list-item">Streams Home</p>
+<p class="list-item">Group Streams</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Attachment Viewer</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Email Reminders & Follow ups</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Email Sharing</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Folder Sharing</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Notifications</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Using folders</button>
+<div class="panel">
+<p class="list-item">Move Folders</p>
+<p class="list-item">Custom Folders</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Applying Tags</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Manage Mail Settings</button>
+<div class="panel">
+<p class="list-item">Compose Preferences</p>
+<p class="list-item">Compose customization</p>
+<p class="list-item">Out of office</p>
+<p class="list-item">Signatures in Zoho Mail</p>
+<p class="list-item">Folder Settings</p>
+<p class="list-item">Themes</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Filters</button>
+<div class="panel">
+<p class="list-item">Filter - Custom DRE Functions</p>
+<p class="list-item">Incoming Filters</p>
+<p class="list-item">Outgoing Filter</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Smart Filters</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Appearance Settings</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Calendar</button>
+<div class="panel">
+<p class="list-item">Calendar Settings</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Tasks</button>
+<div class="panel">
+<p class="list-item">Add Tasks</p>
+<p class="list-item">Using Tasks</p>
+<p class="list-item">Manage Tasks</p>
+<p class="list-item">Unified View</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Notes</button>
+<div class="panel">
+<p class="list-item">Using Notes</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Contacts</button>
+<div class="panel">
+<p class="list-item">Contact Types</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Bookmarks</button>
+<div class="panel">
+<p class="list-item">Zoho Mail Bookmarks extensions</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Reminders</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Email Forwarding</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Import / Export Emails</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; IMAP vs POP</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Zoho Mail as POP account</button>
+<div class="panel">
+<p class="list-item">Outlook for Mac</p>
+<p class="list-item">Outlook for Windows</p>
+<p class="list-item">Outlook Add-in for Windows</p>
+<p class="list-item">Apple Mac Mail Client</p>
+<p class="list-item">Thunderbird</p>
+<p class="list-item">Foxmail</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Zoho Mail as IMAP account</button>
+<div class="panel">
+<p class="list-item">Apple iPhone/ iPad</p>
+<p class="list-item">Outlook for Mac</p>
+<p class="list-item">Outlook for Windows</p>
+<p class="list-item">Outlook Add-in for Windows</p>
+<p class="list-item">Apple Mail Client</p>
+<p class="list-item">Thunderbird</p>
+<p class="list-item">Foxmail</p>
+<p class="list-item">Windows mobile</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; SMTP Server Configuration</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Mobile Access</button>
+<div class="panel">
+<p class="list-item">Zoho Mail - Exchange Activesync</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Add POP Accounts</button>
+<div class="panel">
+<p class="list-item">POP Account Settings</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Add IMAP accounts</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Integrations in Zoho Mail</button>
+<div class="panel">
+<p class="list-item">Zoho People Integration</p>
+<p class="list-item">Zoho Meeting integration</p>
+<p class="list-item">Zoho Cliq Integration</p>
+<p class="list-item">Zoho Projects Integration</p>
+<p class="list-item">Zoho Mail Plugin for WordPress</p>
+<p class="list-item">Alexa Integration</p>
+<p class="list-item">Zapier Integration</p>
+<p class="list-item">Automate.io Integration</p>
+<p class="list-item">Blendr.io Integration</p>
+<p class="list-item">Workato Integration</p>
+<p class="list-item">CRM Add on</p>
+<p class="list-item">Gravatar Integration</p>
+<p class="list-item">IFTTT Integration</p>
+<p class="list-item">Make Integration</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Extensions in Zoho Mail-Using eWidget</button>
+<div class="panel">
+<p class="list-item">Help Desk Extensions</p>
+<p class="list-item">Zoho Desk extension</p>
+<p class="list-item">Zoho Assist Extension</p>
+<p class="list-item">Zen Desk Extension</p>
+<p class="list-item">ServiceDesk Plus Extension</p>
+<p class="list-item">Project Management Extensions</p>
+<p class="list-item">Zoho Projects Extension</p>
+<p class="list-item">Zoho Sprints Extension</p>
+<p class="list-item">Asana Extension</p>
+<p class="list-item">Trello Extension</p>
+<p class="list-item">Contact Management Extensions</p>
+<p class="list-item">Clearbit Extension</p>
+<p class="list-item">FullContact Extension</p>
+<p class="list-item">Zoho Finance Plus Extensions</p>
+<p class="list-item">Zoho Books Extension</p>
+<p class="list-item">Zoho Inventory Extension</p>
+<p class="list-item">Zoho Invoice Extension</p>
+<p class="list-item">Zoho Subscriptions Extension</p>
+<p class="list-item">Zoho Expense Extension</p>
+<p class="list-item">CRM Extensions</p>
+<p class="list-item">Zoho CRM Extension</p>
+<p class="list-item">HubSpot Extension</p>
+<p class="list-item">E- Signature Extensions</p>
+>E- Signature Extensions</p>
+<p class="list-item">Zoho Sign Extension</p>
+<p class="list-item">DocuSign Extension</p>
+<p class="list-item">Other Extensions in eWidget</p>
+<p class="list-item">Zoho Vault extension</p>
+<p class="list-item">Zoho Notebook extension</p>
+<p class="list-item">Zoho ShowTime extension in eWidget</p>
+<p class="list-item">Microsoft QnA Maker for Zoho Mail</p>
+<p class="list-item">Microsoft Sentiment Analysis Extension</p>
+</div>
+
+<button class="bluehover accordion">&nbsp;&nbsp; Developer Space</button>
+<div class="panel">
+<p class="list-item">Develop Extension</p>
+<p class="list-item">Connectors</p>
+<p class="list-item">Webhook</p>
+<p class="list-item">DRE Connectors</p>
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Zoho Mail Add-On</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Zoho Mail Desktop Lite Client</button>
+<div class="panel">
+</div>
+
+<button class="bluehover accordion-nochild">&nbsp;&nbsp; Close Account</button>
+<div class="panel">
+</div>
+
+<script>
+
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.classList.toggle("bluehover");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
